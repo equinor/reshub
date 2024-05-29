@@ -7,7 +7,7 @@ Welcome to ResHub, a repository for sharing notebooks, Python code, and other re
 To get started with ResHub, simply clone the repository to your local machine:
 
 ```
-git clone git@github.com:equinor/reshub.git
+git clone https://github.com/equinor/reshub.git
 ```
 
 Then, you can start exploring the repository and its contents. You can use the notebooks and Python code provided here to help you with your own reservoir-related projects, or you can contribute your own resources to the repository to help others.
