@@ -1,0 +1,21 @@
+# _config.yml
+theme: jekyll-theme-primer
+
+# Configuration for GitHub Pages
+source: .
+destination: ./_site
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+  - jekyll-github-metadata
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
