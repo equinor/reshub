@@ -5,6 +5,8 @@ https://github.com/equinor/komodoenv
 
 1. Source Komodo environment<br>
 `source /prog/res/komodo/stable/enable.csh`
+2. Create a personnal duplicate of the environment (it does not have to be named my-kenv)<br>
+`komodoenv my-kenv`
 2. Create a personnal duplicate of the environment<br>
 `komodoenv geostats-kenv`
 3. source the new environment<br>
@@ -13,11 +15,11 @@ https://github.com/equinor/komodoenv
 `pip install geostatspy`
 
 Next step is to install the new environment in a python kernel<br>
-`python -m ipykernel install --user --name=geostats-kenv --display-name="Python (geostats-kenv)"`
+`python -m ipykernel install --user --name=my-kenv --display-name="Python (geostats-kenv)"`
 
 NB: be aware that update of your environment is not automatic and it should be frequently updated (especially with new komodo release) by<br>
 `komodoenv-update`
-
+NB2: each new terminal windows will start with the default komodo. You will have to source your own vitual environment.
 
 
 # Using that new environment 
