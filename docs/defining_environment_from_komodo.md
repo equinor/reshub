@@ -4,9 +4,9 @@ Information can be found on <br>
 https://github.com/equinor/komodoenv
 
 1. Source Komodo environment<br>
-`source /prog/res/komodo/stable/enable`
+`source /prog/res/komodo/stable/enable.csh`
 2. Create a personnal duplicate of the environment<br>
-`komodoenv my-kenv`
+`komodoenv geostats-kenv`
 3. source the new environment<br>
 `source my-kenv/enable.csh`   (my-kenv/enable, depending on your configuration)
 4. install whatever required packages that are not covered by komodo<br>
@@ -26,9 +26,9 @@ We will use GeostatGuy notebook for that
 `mkdir GeostatGuy`
 2. cloning the original notebook <br>
 `cd GeostatGuy` <br>
-`Git clone https://github.com/GeostatsGuy/GeostatsPyDemos_Book.git`
-3. start Jupiter-lab and be ready to ~~cry~~ play<br>
-`Jupiter-lab`
+`git clone https://github.com/GeostatsGuy/GeostatsPyDemos_Book.git`
+3. start jupyter-lab and be ready to ~~cry~~ play<br>
+`jupyter-lab`
 4. Select the kernel <br> 
 kernel>Change_kernel <br>
 select the newly created one.
