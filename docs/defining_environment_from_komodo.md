@@ -4,20 +4,22 @@ Information can be found on <br>
 https://github.com/equinor/komodoenv
 
 1. Source Komodo environment<br>
-`source /prog/res/komodo/stable/enable`
-2. Create a personnal duplicate of the environment<br>
+`source /prog/res/komodo/stable/enable.csh`
+2. Create a personnal duplicate of the environment (it does not have to be named my-kenv)<br>
 `komodoenv my-kenv`
+2. Create a personnal duplicate of the environment<br>
+`komodoenv geostats-kenv`
 3. source the new environment<br>
 `source my-kenv/enable.csh`   (my-kenv/enable, depending on your configuration)
 4. install whatever required packages that are not covered by komodo<br>
 `pip install geostatspy`
 
 Next step is to install the new environment in a python kernel<br>
-`python -m ipykernel install --user --name=geostats-kenv --display-name="Python (geostats-kenv)"`
+`python -m ipykernel install --user --name=my-kenv --display-name="Python (geostats-kenv)"`
 
 NB: be aware that update of your environment is not automatic and it should be frequently updated (especially with new komodo release) by<br>
 `komodoenv-update`
-
+NB2: each new terminal windows will start with the default komodo. You will have to source your own vitual environment.
 
 
 # Using that new environment 
@@ -26,9 +28,9 @@ We will use GeostatGuy notebook for that
 `mkdir GeostatGuy`
 2. cloning the original notebook <br>
 `cd GeostatGuy` <br>
-`Git clone https://github.com/GeostatsGuy/GeostatsPyDemos_Book.git`
-3. start Jupiter-lab and be ready to ~~cry~~ play<br>
-`Jupiter-lab`
+`git clone https://github.com/GeostatsGuy/GeostatsPyDemos_Book.git`
+3. start jupyter-lab and be ready to ~~cry~~ play<br>
+`jupyter-lab`
 4. Select the kernel <br> 
 kernel>Change_kernel <br>
 select the newly created one.
