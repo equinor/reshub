@@ -1,0 +1,8 @@
+# Project path file to be used together with
+# csh scripts ~/bin/cdproject and ~/bin/cdproject_append
+#
+# Comments in same line as path are used as search tags by
+# ~/bin/cdproject
+#
+# Example:
+# /scratch/fmu/course  # fmu drogon
