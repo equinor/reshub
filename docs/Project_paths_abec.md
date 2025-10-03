@@ -74,7 +74,7 @@ adding a **#** after the path and one or more keywords. The tags are searchable.
 
 **Example .project_paths file:**
 
----*Start of file*---
+---*Start of file*---<br>
 \# Snorre Sim2Seis
 /project/snorre/reservoirmodels/ff
 /project/snorre/reservoirmodels/ff/users/abec
@@ -83,7 +83,8 @@ adding a **#** after the path and one or more keywords. The tags are searchable.
 \# Vigdis Brent Sim2Seis
 /project/pl089/vigdis_area/resmod/brent/ff
 /project/pl089/vigdis_area/resmod/brent/ff/users/abec
-/scratch/vigdis/vm/users/abec
+/scratch/vigdis/vm/users/abec<br>
 ---*End of file*---
 
 **Author: Andreas Becht, 10/2025**
+
