@@ -5,8 +5,8 @@ program for Python. It is included in Komodo. The code formatting is rigorous
 with only few options. The defaults are opinionated and set to "good values"
 satisfying [PEP8](https://peps.python.org/pep-0008/).
 
--**Linting:** Identify and flag programming errors, stylistic inconsistencies, and potential bugs
--**Auto-formatting:** Adjust the code's layout and style to adhere to predefined formatting standards, enhancing readability
+- **Linting:** Identify and flag programming errors, stylistic inconsistencies, and potential bugs
+- **Auto-formatting:** Adjust the code's layout and style to adhere to predefined formatting standards, enhancing readability
 
 ## Usage examples from the command line
 
@@ -40,8 +40,8 @@ For example, you may want longer lines, e.g. with 120 characters, when the defau
 
 Example **.ruff.toml** file:
 
----*Start of file*---
-line-length = 120
+---*Start of file*---<br>
+line-length = 120<br>
 ---*End of file*---
 
 You can also exclude lines from linting by appending `# noqa`.
