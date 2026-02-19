@@ -57,16 +57,13 @@ by starting with **!**: `!a` will show the variable **a** in Pdb.
 - **whatis <expr>** : Print the type of expression
 - **a, args** : Print arguments list of current function
 
-- **b, break <lineno>** : Set breakpoint at line number<br>
-                        b <file:lineno> in another file<br>
-                        b <module.func> by function name
+- **b, break <lineno>** : Set breakpoint at line number
+  - **b <file:lineno>** : in another file
+  - **b <module.func>** : by function name
 - **b <lineno>, [condition]** : Set breakpoint only if condition is true<br>
-                        b <lineno>, a > 3<br>
-                        Note: using lineno, the variable 'a' can be local to the function\br>
-                        b <module.func>, not filename.startswith("/")<br>
-                        Note: using the function to define the breakpoint, the variable<br>
-                        'filename' must be a function argument<br>
-                        condition <bpnumber> [condition] sets a new condition for the breakpoint<br>
+  - **b <lineno>, a > 3** : Using lineno, the variable 'a' can be local to the function
+  - **b <module.func>, not filename.startswith("/")** : Using the function to define the breakpoint, the variable 'filename' must be a function argument
+  - **condition <bpnumber> [condition]** : sets a new condition for the breakpoint
 - **b** : List all breakpoints showing also the bpnumber
 - **tbreak <lineno>** : Temporary breakpoint which is removed when first hit
 - **disable <bpnumber>** : Disable breakpoint
@@ -82,7 +79,7 @@ by starting with **!**: `!a` will show the variable **a** in Pdb.
 - **unt <lineno>** : Continue execution until lineno is reached
 - **r, return** : Continue execution until the current function returns
 - **j, jump <lineno>** : Set the next line to be executed, let's you jump back or forward to skip code
-- **<CR>** : Repeat last command
+- **Enter** : Repeat last command
 
 - **display <expression>** : Display the value of expression if changed, each time execution stops
 - **undisplay <expression>** : Do not display expression any more
@@ -100,10 +97,10 @@ by starting with **!**: `!a` will show the variable **a** in Pdb.
 - **h pdb** : Show the full pdb documentation
 - **q, quit** : Quit the debugger and exit
 
-- **alias <name> <command>** :  Create alias for command, can also be placed in a .pdbrc file in your home directory.<\br>
-                        alias le len(var)  # Print length of variable var<\br>
-                        alias dir import glob; print(glob.glob("%1"))  # List files and directories matching pattern<\br>
-                        alias who pp list(locals().keys())  # List local namespace<\br>
+- **alias <name> <command>** :  Create alias for command, can also be placed in a .pdbrc file in your home directory.
+  - **alias le len(var)** : Print length of variable var
+  - **alias dir import glob; print(glob.glob("%1"))** : List files and directories matching pattern
+  - **alias who pp list(locals().keys())** : List local namespace
 
 - **unalias <name>** : Delete specified alias name
                         
