@@ -52,15 +52,15 @@ by starting with **!**: **!a** will show the variable **a** in Pdb.
 - **l, list** : List source code, default 11 lines
 - **l.** : List source code centered around current line
 - **ll, longlist** : List the whole source code for current function / frame
-- **p <expr>** : Print an expression
-- **pp <expr>** : Pretty print an expression
-- **whatis <expr>** : Print the type of expression
+- **p `<expr>`** : Print an expression
+- **pp `<expr>`** : Pretty print an expression
+- **whatis `<expr>`** : Print the type of expression
 - **a, args** : Print arguments list of current function
 
-- **b, break <lineno>** : Set breakpoint at line number
-  - **b <file:lineno>** : in another file
-  - **b <module.func>** : by function name
-- **b <lineno>, [condition]** : Set breakpoint only if condition is true<br>
+- **b, break `<lineno>`** : Set breakpoint at line number
+  - **b `<file:lineno>`** : in another file
+  - **b `<module.func>`** : by function name
+- **b `<lineno>`, [condition]** : Set breakpoint only if condition is true<br>
   - **b <lineno>, a > 3** : Using lineno, the variable 'a' can be local to the function
   - **b <module.func>, not filename.startswith("/")** : Using the function to define the breakpoint, the variable **filename** must be a function argument
   - **condition <bpnumber> [condition]** : sets a new condition for the breakpoint
