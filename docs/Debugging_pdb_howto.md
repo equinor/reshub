@@ -52,7 +52,7 @@ by starting with **!**: **!a** will show the variable **a** in Pdb.
 - **l, list** : List source code, default 11 lines
 - **l.** : List source code centered around current line
 - **ll, longlist** : List the whole source code for current function / frame
-- **p `<expr>`** : Print an expression
+- **p \<expr\>** : Print an expression
 - **pp `<expr>`** : Pretty print an expression
 - **whatis `<expr>`** : Print the type of expression
 - **a, args** : Print arguments list of current function
