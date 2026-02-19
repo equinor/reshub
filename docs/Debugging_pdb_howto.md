@@ -76,7 +76,6 @@ by starting with **!**: **!a** will show the variable **a** in Pdb.
 - **r, return** : Continue execution until the current function returns.
 - **unt, until** : Continue execution until the line with greater lineno is reached.
 - **unt \<lineno\>** : Continue execution until lineno is reached.
-- **r, return** : Continue execution until the current function returns.
 - **j, jump \<lineno\>** : Set the next line to be executed, let's you jump back or forward to skip code.
 - **\<Enter\>** : Repeat last command.
 
