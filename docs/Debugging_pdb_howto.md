@@ -78,7 +78,7 @@ by starting with **!**: **!a** will show the variable **a** in Pdb.
 - **unt \<lineno\>** : Continue execution until lineno is reached.
 - **r, return** : Continue execution until the current function returns.
 - **j, jump \<lineno\>** : Set the next line to be executed, let's you jump back or forward to skip code.
-- **Enter** : Repeat last command.
+- **\<Enter\>** : Repeat last command.
 
 - **display \<expression\>** : Display the value of expression if changed, each time execution stops.
 - **undisplay \<expression\>** : Do not display expression any more.
@@ -109,8 +109,8 @@ listed above are the same.
 
 Advantages of ipdb are:
 
-- syntax highlighting (as in IPython)
-- command auto-completion
+- Cyntax highlighting (as in IPython).
+- Command auto-completion.
 
 To set a breakpoint, insert the following code:
 
