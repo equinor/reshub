@@ -39,7 +39,7 @@ enter pdb and stop execution immediately at the beginning of the script:
 python -m pdb script.py
 ```
 
-Then type c to continue execution until the error occurs.
+Then type **c** to continue execution until the error occurs.
 
 
 ## Commands in Pdb
