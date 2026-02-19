@@ -2,7 +2,7 @@
 
 ## Breaking into the debugger
 
-pdb is part of Python's standard library and always available.
+Pdb is part of Python's standard library and always available.
 
 Insert the following code where you want to break into the debugger:
 
@@ -32,7 +32,7 @@ unset PYTHONBREAKPOINT  # Bash
 ```
 
 Running Python from the command-line, you can also break into the debuggger
-without using pdb.set_trace() or breakpoint() in the Python file. This will
+without using `pdb.set_trace()` or `breakpoint()` in the Python file. This will
 enter pdb and stop execution immediately at the beginning of the script:
 
 ```
