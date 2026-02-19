@@ -23,8 +23,8 @@ IPython is an interactive shell for Python. Some main features are:
 * Object introspection, code documentation
   - Use **?** or **??** to get help about an object or magic function
   - Allows **?** with wildcard matching, e.g.
-    + ***Error?** lists all types of Python errors
-    + **str.*find*?** lists all string methods with 'find' in its name
+    - ***Error?** lists all types of Python errors
+    - **str.*find*?** lists all string methods with 'find' in its name
   - Use **help(function)** for Python's own help system
 
 * Tab completion
