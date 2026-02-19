@@ -47,30 +47,30 @@ Then type c to continue execution until the error occurs.
 Pdb commands can conflict with normal Python code. For example: the **a** pdb
 command and an **a** Python variable in the code. You can print the variable **a**
 with `print a`. Also, you can force pdb to understand something as Python code
-by starting with `!`: `!a` will show the variable **a** in Pdb.
+by starting with **!**: `!a` will show the variable **a** in Pdb.
 
-- **l, list**                 List source code, default 11 lines
-l.                      List source code centered around current line
-ll, longlist            List the whole source code for current function / frame
-p <expr>                Print an expression
-pp <expr>               Pretty print an expression
-whatis <expr>           Print the type of expression
-a, args                 Print arguments list of current function
+- **l, list** :                 List source code, default 11 lines
+- **l.** :                      List source code centered around current line
+- **ll, longlist** :            List the whole source code for current function / frame
+- **p <expr>** :                Print an expression
+- **pp <expr>**               Pretty print an expression
+- **whatis <expr>**           Print the type of expression
+- **a, args**                 Print arguments list of current function
 
-b, break <lineno>       Set breakpoint at line number
-                        b <file:lineno> in another file
+- **b, break <lineno>**       Set breakpoint at line number<\br>
+                        b <file:lineno> in another file<\br>
                         b <module.func> by function name
-b <lineno>, [condition] Set breakpoint only if condition is true
-                        b <lineno>, a > 3
-                        Note: using lineno, the variable 'a' can be local to the function
-                        b <module.func>, not filename.startswith("/")
-                        Note: using the function to define the breakpoint, the variable
-                        'filename' must be a function argument
-                        condition <bpnumber> [condition] sets a new condition for the breakpoint
-b                       List all breakpoints showing also the bpnumber
-tbreak <lineno>         Temporary breakpoint which is removed when first hit
-disable <bpnumber>      Disable breakpoint
-enable <bpnumber>       Enable breakpoint
+- **b <lineno>, [condition]** : Set breakpoint only if condition is true<\br>
+                        b <lineno>, a > 3<\br>
+                        Note: using lineno, the variable 'a' can be local to the function<\br>
+                        b <module.func>, not filename.startswith("/")<\br>
+                        Note: using the function to define the breakpoint, the variable<\br>
+                        'filename' must be a function argument<\br>
+                        condition <bpnumber> [condition] sets a new condition for the breakpoint<\br>
+- **b** :                       List all breakpoints showing also the bpnumber
+- **tbreak <lineno>**         Temporary breakpoint which is removed when first hit
+- **disable <bpnumber>**      Disable breakpoint
+- **enable <bpnumber>**       Enable breakpoint
 cl, clear <bpnumber>    Delete breakpoint
 
 c, continue             Continue execution to the next breakpoint
