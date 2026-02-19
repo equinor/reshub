@@ -5,7 +5,7 @@ IPython is an interactive shell for Python. Some main features are:
 * Numbered prompts
   - E.g. **In [2]**, **Out[2]**
   - Output accessible with **Out[2]** or **_2**
-  - Last objects in output history:  **\_**, **\_\_**, **\_\_\_** for last, second, and third last, respecively
+  - Last objects in output history:  **\_** , **\_\_** , **\_\_\_** for last, second, and third last, respectively
 
 * Magic commands for efficient work, e.g.
   - **%cd**, **%pwd**, **%ls**
