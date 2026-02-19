@@ -49,56 +49,56 @@ command and an **a** Python variable in the code. You can print the variable **a
 with **print a**. Also, you can force pdb to understand something as Python code
 by starting with **!**: **!a** will show the variable **a** in Pdb.
 
-- **l, list** : List source code, default 11 lines
-- **l.** : List source code centered around current line
-- **ll, longlist** : List the whole source code for current function / frame
-- **p \<expr\>** : Print an expression
-- **pp \<expr\>** : Pretty print an expression
-- **whatis \<expr\>** : Print the type of expression
-- **a, args** : Print arguments list of current function
+- **l, list** : List source code, default 11 lines.
+- **l.** : List source code centered around current line.
+- **ll, longlist** : List the whole source code for current function / frame.
+- **p \<expr\>** : Print an expression.
+- **pp \<expr\>** : Pretty print an expression.
+- **whatis \<expr\>** : Print the type of expression.
+- **a, args** : Print arguments list of current function.
 
-- **b, break \<lineno\>** : Set breakpoint at line number
-  - **b \<file:lineno\>** : in another file
-  - **b \<module.func\>** : by function name
-- **b \<lineno\>, [condition]** : Set breakpoint only if condition is true
-  - **b \<lineno>, a \> 3** : Using lineno, the variable **a** can be local to the function
-  - **b \<module.func\>, not filename.startswith("/")** : Using the function to define the breakpoint, the variable **filename** must be a function argument
-  - **condition \<bpnumber\> [condition]** : sets a new condition for the breakpoint
-- **b** : List all breakpoints showing also the bpnumber
-- **tbreak \<lineno\>** : Temporary breakpoint which is removed when first hit
-- **disable \<bpnumber\>** : Disable breakpoint
-- **enable \<bpnumber\>** : Enable breakpoint
-- **cl, clear \<bpnumber\>** : Delete breakpoint
+- **b, break \<lineno\>** : Set breakpoint at line number.
+  - **b \<file:lineno\>** :  Set breakpoint in another file.
+  - **b \<module.func\>** :  Set breakpoint by function name.
+- **b \<lineno\>, [condition]** : Set breakpoint only if condition is true.
+  - **b \<lineno>, a \> 3** : Using lineno, the variable **a** can be local to the function.
+  - **b \<module.func\>, not filename.startswith("/")** : Using the function to define the breakpoint, the variable **filename** must be a function argument.
+  - **condition \<bpnumber\> [condition]** : sets a new condition for the breakpoint.
+- **b** : List all breakpoints showing also the bpnumber.
+- **tbreak \<lineno\>** : Temporary breakpoint which is removed when first hit.
+- **disable \<bpnumber\>** : Disable breakpoint.
+- **enable \<bpnumber\>** : Enable breakpoint.
+- **cl, clear \<bpnumber\>** : Delete breakpoint.
 
-- **c, continue** : Continue execution to the next breakpoint
-- **n, next** : Continue execution until next line staying in current function
-- **s, step** : Execute current line and stop at first possible occasion either inside current function or a function that is called (step inside)
-- **r, return** : Continue execution until the current function returns
-- **unt, until** : Continue execution until the line with greater lineno is reached
-- **unt \<lineno\>** : Continue execution until lineno is reached
-- **r, return** : Continue execution until the current function returns
-- **j, jump \<lineno\>** : Set the next line to be executed, let's you jump back or forward to skip code
-- **Enter** : Repeat last command
+- **c, continue** : Continue execution to the next breakpoint.
+- **n, next** : Continue execution until next line staying in current function.
+- **s, step** : Execute current line and stop at first possible occasion either inside current function or a function that is called (step inside).
+- **r, return** : Continue execution until the current function returns.
+- **unt, until** : Continue execution until the line with greater lineno is reached.
+- **unt \<lineno\>** : Continue execution until lineno is reached.
+- **r, return** : Continue execution until the current function returns.
+- **j, jump \<lineno\>** : Set the next line to be executed, let's you jump back or forward to skip code.
+- **Enter** : Repeat last command.
 
-- **display \<expression\>** : Display the value of expression if changed, each time execution stops
-- **undisplay \<expression\>** : Do not display expression any more
-- **display** : List all display expressions for current frame
-- **undisplay** : Clear all display expressions for current frame
+- **display \<expression\>** : Display the value of expression if changed, each time execution stops.
+- **undisplay \<expression\>** : Do not display expression any more.
+- **display** : List all display expressions for current frame.
+- **undisplay** : Clear all display expressions for current frame.
 
 - **w, where** : Print a stack trace to find out who the caller of a function is. The most recent frame is at the bottom.
 - **u, up \<count\>** : Move current frame count levels up in the stack trace to an older frame. This moves to the caller of a function.
 - **d, down \<count\>** : Move current frame count levels down in the stack trace to a newer frame. This moves back from the caller to the function.
 
-- **h, help \<cmd\>** : Get help for a command or topic
-- **h pdb** : Show the full pdb documentation
-- **q, quit** : Quit the debugger and exit
+- **h, help \<cmd\>** : Get help for a command or topic.
+- **h pdb** : Show the full pdb documentation.
+- **q, quit** : Quit the debugger and exit.
 
 - **alias \<name\> \<command\>** :  Create alias for command, can also be placed in a **.pdbrc** file in your home directory.
-  - **alias le len(var)** : Print length of variable var
-  - **alias dir import glob; print(glob.glob("%1"))** : List files and directories matching pattern
-  - **alias who pp list(locals().keys())** : List local namespace
+  - **alias le len(var)** : Print length of variable **var**.
+  - **alias dir import glob; print(glob.glob("%1"))** : List files and directories matching pattern.
+  - **alias who pp list(locals().keys())** : List local namespace.
 
-- **unalias \<name\>** : Delete specified alias name
+- **unalias \<name\>** : Delete specified alias name.
                         
 
 # IPdb - enhanced debugger
