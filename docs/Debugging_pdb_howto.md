@@ -60,8 +60,8 @@ by starting with **!**: **!a** will show the variable **a** in Pdb.
 - **b, break \<lineno\>** : Set breakpoint at line number
   - **b \<file:lineno\>** : in another file
   - **b \<module.func\>** : by function name
-- **b \<lineno\>, \[condition\]** : Set breakpoint only if condition is true
-  - **b \<lineno>, a \> 3** : Using lineno, the variable 'a' can be local to the function
+- **b \<lineno\>, [condition]** : Set breakpoint only if condition is true
+  - **b \<lineno>, a \> 3** : Using lineno, the variable **a** can be local to the function
   - **b \<module.func\>, not filename.startswith("/")** : Using the function to define the breakpoint, the variable **filename** must be a function argument
   - **condition \<bpnumber\> [condition]** : sets a new condition for the breakpoint
 - **b** : List all breakpoints showing also the bpnumber
