@@ -5,7 +5,7 @@ IPython is an interactive shell for Python. Some main features are:
 * Numbered prompts
   - E.g. **In [2]**, **Out[2]**
   - Output accessible with **Out[2]** or **_2**
-  - Last objects in output history:  **_**, **__**, **___** for last, second, and third last, respecively
+  - Last objects in output history:  **\_**, **\_\_**, **\_\_\_** for last, second, and third last, respecively
 
 * Magic commands for efficient work, e.g.
   - **%cd**, **%pwd**, **%ls**
@@ -51,39 +51,40 @@ IPython is an interactive shell for Python. Some main features are:
 
 Write some draft code in the IPython shell. Save it to a .py file with:
 
+```
 %save script.py             # Save code history to a .py file
 %save script.py 4 5 6 8     # Save only input prompts 4, 5, 6 and 8 to a .py file
-
+```
 
 ## Debug .py files
 
 Run your .py file in IPython with
-
+```
 %run file   (.py extension can be omitted)
-
+```
 If an exception occurs, you can go into the ipdb debugger with:
-
+```
 %debug
-
+```
 To activate automatic calling of the pdb debugger when an exception occurs:
-
+```
 %pdb on
-
+```
 You can also start a debugging session like this:
-
+```
 %run -d file.py                 # breakpoint in first line
 %run -d -b14 file.py            # breakpoint in line 14
 %run -d -b foo.py:42 file.py    # breakpoint in foo.py on line 42, run file.py
-
+```
 The last example is useful when a bug is hidden in one of the imported modules
 and you don't want to step through the code manually.
 
 If the program runs successfully, the variables and functions at module level
 are available in the IPython namespace. They can further be used in IPython for
 inspection or testing. To list the IPython namespace:
-
+```
 %whos
-
+```
 
 ## Embed IPython in scripts
 
@@ -107,17 +108,17 @@ Load a script into IPython with the option to modify it before execution.
 Modify by arrow up/down and type your changes. Execute with <CR> after the last
 code line. After execution, all variables and functions are available in the
 IPython namespace.
-
+```
 %load script.py                         # Load enire script, .py can be omitted
 %load -r 1-10 script.py                 # Load line range
 %load -s my_function,MyClass script.py
 %load URL
-
+```
 Edit a script in default editor ($EDITOR environment variable) and execute it
 upon closing the editor.
-
+```
 %edit script.py
-
+```
 Edit a script without executing it after closing the editor:
 
 ```
@@ -126,13 +127,13 @@ Edit a script without executing it after closing the editor:
 
 Run a script in the IPython shell. After execution, all variables and functions
 are available in the IPython namespace.
-
+```
 %run script.py
-
+```
 If an exception occurs, you can call the pdb debugger with:
-
+```
 %debug
-
+```
 
 ## Test modules/functions
 
@@ -146,10 +147,10 @@ my_module.analyze_data(data)
 ```
 
 If you modify my_module.py, you can reload it automatically with these settings:
-
+```
 %load_ext autoreload    # Load the autoreload extension
 %autoreload 2           # 0: Disable auto-reload, 1: only modules imported with %aimport, 2: auto-reload all
-
+```
 
 ## Run workflows
 
@@ -190,9 +191,9 @@ plot_data(df)
 
 A selection of magic commands is listed below.
 
-Note if '%automagic on' (default) you can run magic commands without having to
-type the initial '%'.  However, magic functions have lowest priority, so if
-there is a variable whose name collides with that of a magic function,
+Note if **%automagic on** (default) you can run magic commands without having to
+type the initial **%**. However, magic functions have lowest priority, so if
+there is a variable whose name that collides with that of a magic function,
 automagic won't work for that function. You get the variable instead.
 
 ```
@@ -261,9 +262,9 @@ a commond with errors, to avoid suggesting them for auto-completion. For
 example, when you typed 'quite' or 'qut' instead of 'quit'.
 
 The IPython history is normally stored in **~/.ipython/profile_default/history.sqlite**.
-You can also display the location with **ipython locate profile default** in the terminal.
+You can also display the location with ```ipython locate profile default``` in the terminal.
 
-Manage the history with SQLite: **sqlite3 ~/.ipython/profile_default/history.sqlite**
+Manage the history with SQLite: ```sqlite3 ~/.ipython/profile_default/history.sqlite```
 
 Execute SQL commands within the SQLite prompt:
 
