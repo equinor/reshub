@@ -28,7 +28,7 @@ IPython is an interactive shell for Python. Some main features are:
   - Use **help(function)** for Python's own help system
 
 * Tab completion
-  - Tab to select, **Ctrl-Up** and **Ctrl-Down** to scroll suggestions
+  - **Tab** to select, **Ctrl-Up** and **Ctrl-Down** to scroll suggestions
   - Accept also with **Ctrl-e**, **Ctrl-f**, **Right**, **Ctrl-Right** (token only)
   - **Ctrl-n**, **Ctrl-p** or **Up**, **Down** arrow keys to select suggestion or scroll through command history
 
