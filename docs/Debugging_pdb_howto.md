@@ -108,7 +108,7 @@ listed above are the same.
 
 Advantages of ipdb are:
 
-- Cyntax highlighting (as in IPython).
+- Syntax highlighting (as in IPython).
 - Command auto-completion.
 
 To set a breakpoint, insert the following code:
