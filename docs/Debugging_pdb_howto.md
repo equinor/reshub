@@ -1,4 +1,4 @@
-# Debugging with pde
+# Debugging with pdb
 
 ## Breaking into the debugger
 
