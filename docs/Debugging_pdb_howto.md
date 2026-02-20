@@ -47,7 +47,7 @@ Then type **c** to continue execution until the error occurs.
 Pdb commands can conflict with normal Python code. For example: the **a** pdb
 command and an **a** Python variable in the code. You can print the variable **a**
 with **print a**. Also, you can force pdb to understand something as Python code
-by starting with **!**. For example, **!a** will show the variable **a** in pdb.
+by starting with an exclamation mark. For example, **!a** will show the variable **a** in pdb.
 
 - **l, list** : List source code, default 11 lines.
 - **l.** : List source code centered around current line.
